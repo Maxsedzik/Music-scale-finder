@@ -10,22 +10,23 @@ function finder() {
   let note4 = document.getElementById("note4").value;
   let note5 = document.getElementById("note5").value;
 
+  let notes = [];
+  notes.push(note1);
+  notes.push(note2);
+  notes.push(note3);
+  notes.push(note4);
+  notes.push(note5);
+
   let re1 = new RegExp(note1);
   let re2 = new RegExp(note2);
   let re3 = new RegExp(note3);
   let re4 = new RegExp(note4);
   let re5 = new RegExp(note5);
 
-  if (note1.length !== 0 && re1.test(cmaj)) {
-    if (note2.length !== 0 && re2.test(cmaj)) {
-      if (note3.length !== 0 && re3.test(cmaj)) {
-        if (note4.length !== 0 && re4.test(cmaj)) {
-          if (note5.length !== 0 && re5.test(cmaj)) {
-            console.log("CMAJ GOOD");
-          }
-        }
-      }
-    }
+  if (note1.length >= 1) {
+    if (re1.test(cmaj) === true) {
+    
+  } else {
+    console.log("CMAJ BAD");
   }
-  console.log("CMAJ BAD");
 }
