@@ -18,3 +18,7 @@ body {
   font-size: 1.8rem;
   cursor: pointer;
 }
+
+.is-invalid {
+  background-color: red;
+}
